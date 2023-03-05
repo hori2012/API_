@@ -129,7 +129,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 DestroyWindow(hWnd);
                 break;
             case TM_START:
-                SetTimer(hWnd, 0, 0.999999, (TIMERPROC)TimerProc);
+                SetTimer(hWnd, 0, 1000, (TIMERPROC)TimerProc);
                 break;
             case TM_STOP:
                 KillTimer(hWnd, 0);
